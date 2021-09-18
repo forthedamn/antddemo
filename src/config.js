@@ -1,35 +1,27 @@
-import { lazy } from "react-router-guard";
+import { lazy } from 'react-router-guard';
 
 export default [
   {
-    path: "/",
-    component: lazy(() => import("./layouts/MainLayout")),
+    path: '/',
+    component: lazy(() => import('./layouts/MainLayout')),
     routes: [
       {
-        path: "/",
+        path: '/',
         exact: true,
-        redirect: "/home/1"
+        redirect: '/home/1',
       },
       {
-        path: "/services",
-        redirect: "/services/1"
+        path: '/services',
+        redirect: '/services/1',
       },
       {
-        path: "/home/1",
-        component: lazy(() => import("./pages/Home/Component"))
+        path: '/component/1',
+        component: lazy(() => import('./pages/Component')),
       },
       {
-        path: "/home/2",
-        component: lazy(() => import("./pages/Home/System"))
+        path: '/auths/1',
+        component: lazy(() => import('./pages/Auths')),
       },
-      {
-        path: "/services/1",
-        component: lazy(() => import("./pages/Services/NewService1"))
-      },
-      {
-        path: "/services/2",
-        component: lazy(() => import("./pages/Services/NewService2"))
-      }
-    ]
-  }
+    ],
+  },
 ];
