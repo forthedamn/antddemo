@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Breadcrumb, Layout } from 'antd';
-import { getAuthList, editAuth, addAuth } from '../../../api/auth/index';
+import { getAuthList, editAuth, addAuth } from '../../api/auth/index';
 const { Content } = Layout;
 
 function NewService1() {

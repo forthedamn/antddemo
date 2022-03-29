@@ -4,7 +4,7 @@ import {
   getComponentList,
   getComponentType,
   addComponent
-} from "../../../api/component/index";
+} from "../../api/component/index";
 
 const { Content } = Layout;
 
